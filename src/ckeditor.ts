@@ -55,7 +55,8 @@ import { CKFinder } from "@ckeditor/ckeditor5-ckfinder";
 const csrfMeta = document.querySelector('meta[name="csrf-token"]');
 const csrfToken = csrfMeta ? csrfMeta.getAttribute('content') : '';
 
-class BaseEditor extends ClassicEditor {
+export class BaseEditor extends ClassicEditor {
+
 	public static override builtinPlugins = [
 		Alignment,
 		AutoLink,
